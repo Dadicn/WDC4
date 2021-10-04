@@ -1,0 +1,361 @@
+.user {
+    width: 100%;
+    height: 1080px;
+    background-color: #48337B;
+    overflow: hidden;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title h1 {
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 96px;
+line-height: 112px;
+color: #FFFFFF;
+
+    }
+
+.title h2 {
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+    font-style: normal;
+    color: #FFFFFF;
+}
+.elipses {
+    display: flex;
+}
+.elipse1 {
+    padding-top: 454px;
+}
+
+.elipse2 {
+    position: absolute;
+    width: 60%;
+    left: 250px;
+    top:  -30px;
+    transform: rotate(91.41deg);
+}
+
+.elipse3 {
+    padding-top: 823px;
+    padding-left: 256px;
+}
+
+
+.rectangle {
+    width: 100%;
+    height: 674px;
+    background-color: white;
+    display: flex;
+}
+
+.text {
+    width: 50%;
+    padding-left: 240px;
+    padding-top: 88px;
+}
+
+.text h1 {
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+}
+
+.text h2 {
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 56px;
+}
+
+.text p {
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+margin-top: 24px;
+}
+
+.readmore {
+margin-top: 24px;
+}
+
+.circle {
+  padding-top: 187px;
+  padding-left: 104px;
+  display: flex;
+ 
+}
+
+.circle2 {
+    position: absolute;
+    margin-right: 576px;
+    margin-top: -59px;
+}
+
+.brain {
+    width: 100%;
+    height: 518px;
+    background-color: #48337B;
+    display: flex;
+}
+
+.ux {
+    padding: 178px 0 178px 389px;
+    
+}
+
+.ux {
+    h1 { 
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 96px;
+line-height: 112px;
+color: white;
+    }
+    h2 {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 23px;
+        color: white; 
+    }
+}
+
+.brain-logo {
+    margin-left: 59px;
+    margin-top: 70px;
+}
+
+.ui {
+    padding-top: 178px;
+    margin-left: 70px;
+}
+
+.ui {
+    h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 112px;
+    color: white;
+    }
+    h2 {
+    font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 20px;
+line-height: 23px;
+color: white;
+    }
+}
+
+.principles {
+    width: 100%;
+    height: 1855px;
+    background-color: white;
+    overflow: hidden;
+}
+
+.title-ux h1 {
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 56px;
+text-align: center;
+margin-top: 56px;
+}
+
+.remove {
+    margin-top: 56px;
+    display: flex;
+}
+
+.four {
+    display: flex;
+    padding-left: 20px;
+}
+
+.organize {
+    margin-top: 56px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.hide {
+    margin-top: 56px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.displace {
+    margin-top: 56px;
+    margin-left: 40px;
+    display: flex;
+}
+
+.x {
+    position: absolute;
+    margin-left: 128.67px;
+    margin-top: 101.67px;
+}
+
+.org {
+    position: absolute;
+    margin-left: 117px;
+    margin-top: 107px;
+}
+
+.eye {
+    position: absolute;
+    margin-left: 106.33px;
+    margin-top: 91px;
+}
+
+.dis {
+    position: absolute;
+    margin-left: 97px;
+    margin-top: 75px;
+}
+
+.remove svg:hover rect {
+    fill: orange;
+}
+
+.organize svg:hover rect {
+    fill: orange;
+}
+
+.hide svg:hover rect {
+    fill: orange;
+}
+
+.displace svg:hover rect {
+    fill: orange;
+}
+
+.title-stages h1 {
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 56px;
+text-align: center;
+margin-top: 189px;
+}
+
+.start h1 {
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+margin-top: 109px;
+padding-left: 421px;
+}
+
+.race {
+    padding-left: 351px;
+}
+
+.arrow {
+    padding-left: 434px;
+}
+
+.research {
+    padding-left: 391px;
+    display: flex;
+}
+
+.research-title  h1 {
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+}
+
+.vector1 {
+    margin-left: 32.5px;
+    margin-top: -20px;
+}
+
+.vector1 h1 {
+    padding-left: 273px;
+    margin-top: -40px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+}
+
+.testing {
+    padding-left: 191px;
+    display: flex;
+}
+
+.vector2 {
+    margin-top: -50px;
+}
+
+.testing-title h1 {
+    margin-top: 210px;
+    margin-left: 32.5px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+}
+
+.arrow2 {
+    text-align: end;
+    padding-right: 267px;
+    margin-top: -50px;
+}
+
+.race2 {
+    text-align: end;
+    padding-right: 181px;
+}
+
+.finish h1 {
+    text-align: end;
+    margin-right: 241px;
+    font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+}
+
+.elipse4 {
+    left: -110px;
+    position: absolute;
+    transform: rotate(18.85deg);
+}
+
+.elipse5 {
+    position: absolute;
+    left: 1035px;
+}
+
