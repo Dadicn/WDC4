@@ -1,361 +1,725 @@
-.user {
+:host {
+  .home {
     width: 100%;
-    height: 1080px;
-    background-color: #48337B;
+    background-color: #48337b;
+    position: relative;
+    display: flex;
     overflow: hidden;
-}
 
-.title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.title h1 {
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 96px;
-line-height: 112px;
-color: #FFFFFF;
-
+    .elipse1 {
+      position: relative;
+      width: 30%;
+      top: 20%;
+      left: 20%;
+    }
+    .elipse2 {
+      position: relative;
+      width: 30%;
+      left: -30%;
+      top: 50px;
+    }
+    .elipse3 {
+      position: absolute;
+      width: 30%;
+      left: 60%;
+      top: 70%;
     }
 
-.title h2 {
-        font-family: Roboto;
+    .title {
+      .title1 {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: nullpx;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 25px;
+        font-style: normal;
         font-weight: 500;
-        font-size: 24px;
-        line-height: 28px;
-    font-style: normal;
-    color: #FFFFFF;
-}
-.elipses {
-    display: flex;
-}
-.elipse1 {
-    padding-top: 454px;
-}
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff;
+      }
 
-.elipse2 {
-    position: absolute;
-    width: 60%;
-    left: 250px;
-    top:  -30px;
-    transform: rotate(91.41deg);
-}
-
-.elipse3 {
-    padding-top: 823px;
-    padding-left: 256px;
-}
-
-
-.rectangle {
-    width: 100%;
-    height: 674px;
-    background-color: white;
-    display: flex;
-}
-
-.text {
-    width: 50%;
-    padding-left: 240px;
-    padding-top: 88px;
-}
-
-.text h1 {
-    font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 28px;
-}
-
-.text h2 {
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 56px;
-}
-
-.text p {
-    font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 24px;
-line-height: 28px;
-margin-top: 24px;
-}
-
-.readmore {
-margin-top: 24px;
-}
-
-.circle {
-  padding-top: 187px;
-  padding-left: 104px;
-  display: flex;
- 
-}
-
-.circle2 {
-    position: absolute;
-    margin-right: 576px;
-    margin-top: -59px;
-}
-
-.brain {
-    width: 100%;
-    height: 518px;
-    background-color: #48337B;
-    display: flex;
-}
-
-.ux {
-    padding: 178px 0 178px 389px;
-    
-}
-
-.ux {
-    h1 { 
-    font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 96px;
-line-height: 112px;
-color: white;
+      .title2 {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: #ffffff;
+      }
     }
-    h2 {
+  }
+
+  .rectangle {
+    display: block;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px 20px;
+    margin: 0 auto;
+
+    .left {
+      p {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 28px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+
+      h2 {
         font-family: Roboto;
         font-style: normal;
-        font-weight: normal;
-        font-size: 20px;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 56px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #333333;
+      }
+
+      .read-more {
+        height: 48px;
+        width: 220px;
+        border-radius: 43px;
+        background-color: #ff9800;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #ffffff;
+        border: none;
+        cursor: pointer;
+      }
+    }
+    .right {
+      position: relative;
+      margin-top: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .circles {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .brain {
+    background-color: #48337b;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .ux {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        margin-bottom: -20px;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 113px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff;
+      }
+
+      h3 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
         line-height: 23px;
-        color: white; 
+        letter-spacing: 0em;
+        text-align: center;
+        color: #ffffff;
+      }
     }
-}
 
-.brain-logo {
-    margin-left: 59px;
-    margin-top: 70px;
-}
-
-.ui {
-    padding-top: 178px;
-    margin-left: 70px;
-}
-
-.ui {
-    h1 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 96px;
-    line-height: 112px;
-    color: white;
+    .brain-img {
+      width: 70%;
+      height: 30%;
+      padding: 20px 20px;
     }
-    h2 {
-    font-family: Roboto;
-font-style: normal;
-font-weight: normal;
-font-size: 20px;
-line-height: 23px;
-color: white;
-    }
-}
 
-.principles {
-    width: 100%;
-    height: 1855px;
-    background-color: white;
+    .ui {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        margin-bottom: -20px;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 113px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #ffffff;
+      }
+
+      h3 {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 23px;
+        letter-spacing: 0em;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .principles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .principles-title {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 50px 0;
+
+      h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 35px;
+        line-height: 56px;
+        color: #000000;
+        margin-bottom: -5px;
+      }
+    }
+    .square {
+      display: grid;
+      grid-gap: 20px;
+
+      .s:hover {
+        background: #ff9800;
+        transition: 0.5s;
+        transform: scale(1.1);
+      }
+
+      .s {
+        position: relative;
+        width: 220px;
+        height: 160px;
+        background: #48337b;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 8px;
+
+        img {
+          position: absolute;
+          width: 30%;
+          top: 40%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+        .tag {
+          position: absolute;
+          top: 70%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          font-style: normal;
+          font-weight: normal;
+          font-size: 22px;
+          line-height: 56px;
+
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .stages {
+    margin-top: 30px;
     overflow: hidden;
-}
-
-.title-ux h1 {
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 56px;
-text-align: center;
-margin-top: 56px;
-}
-
-.remove {
-    margin-top: 56px;
+    position: relative;
     display: flex;
-}
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
-.four {
-    display: flex;
-    padding-left: 20px;
-}
+    .stages-title {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
 
-.organize {
-    margin-top: 56px;
-    margin-left: 40px;
-    display: flex;
-}
+      h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 56px;
+        color: #000000;
+      }
+    }
 
-.hide {
-    margin-top: 56px;
-    margin-left: 40px;
-    display: flex;
-}
+    .elipse4 {
+      position: absolute;
+      top: 80px;
+      left: -10px;
+      width: 25%;
+    }
 
-.displace {
-    margin-top: 56px;
-    margin-left: 40px;
-    display: flex;
-}
+    .elipse5 {
+      position: absolute;
+      width: 25%;
+      top: 75%;
+      left: 80%;
+    }
 
-.x {
-    position: absolute;
-    margin-left: 128.67px;
-    margin-top: 101.67px;
-}
+    .start-finish {
+      position: relative;
 
-.org {
-    position: absolute;
-    margin-left: 117px;
-    margin-top: 107px;
-}
+      .start-finish-img {
+        display: block;
+        margin: 0 auto;
+        width: 55%;
+      }
+    }
+  }
 
-.eye {
-    position: absolute;
-    margin-left: 106.33px;
-    margin-top: 91px;
-}
+  @media screen and (min-width: 768px) {
+    .home {
+      .elipse1 {
+        width: 15%;
+      }
 
-.dis {
-    position: absolute;
-    margin-left: 97px;
-    margin-top: 75px;
-}
+      .elipse2 {
+        left: -20%;
+      }
+      .title {
+        .title1 {
+          font-size: 50px;
+          top: 50%;
+        }
 
-.remove svg:hover rect {
-    fill: orange;
-}
+        .title2 {
+          font-size: 20px;
+        }
+      }
+    }
 
-.organize svg:hover rect {
-    fill: orange;
-}
+    .brain {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 40px 40px;
 
-.hide svg:hover rect {
-    fill: orange;
-}
+      .brain-img {
+        width: 40%;
+        margin: 0 -90px;
+      }
+    }
 
-.displace svg:hover rect {
-    fill: orange;
-}
+    .stages {
+      .stages-title {
+        h1 {
+          font-size: 50px;
+        }
+      }
+      .elipse5 {
+        top: 50%;
+      }
+    }
+  }
 
-.title-stages h1 {
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 56px;
-text-align: center;
-margin-top: 189px;
-}
+  @media screen and (min-width: 1000px) {
+    .home {
+      .elipse1 {
+        width: 20%;
+      }
 
-.start h1 {
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 28px;
-margin-top: 109px;
-padding-left: 421px;
-}
+      .elipse2 {
+        top: 90px;
+        width: 30%;
+        left: -30%;
+      }
 
-.race {
-    padding-left: 351px;
-}
+      .elipse3 {
+        width: 30%;
+      }
+      .title {
+        .title1 {
+          font-size: 60px;
+          top: 50%;
+        }
 
-.arrow {
-    padding-left: 434px;
-}
+        .title2 {
+          font-size: 22px;
+          margin-top: -25px;
+        }
+      }
+    }
 
-.research {
-    padding-left: 391px;
-    display: flex;
-}
+    .rectangle {
+      display: flex;
+      flex-direction: row;
+      padding: 100px 50px;
 
-.research-title  h1 {
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 28px;
-}
+      .left {
+        padding-left: 80px;
+      }
+      .right {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 130%;
+      }
+    }
 
-.vector1 {
-    margin-left: 32.5px;
-    margin-top: -20px;
-}
+    .brain {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding: 40px 40px;
 
-.vector1 h1 {
-    padding-left: 273px;
-    margin-top: -40px;
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 28px;
-}
+      .brain-img {
+        width: 40%;
+        margin: 0 -90px;
+      }
+    }
 
-.testing {
-    padding-left: 191px;
-    display: flex;
-}
+    .principles {
+      .square {
+        display: flex;
 
-.vector2 {
-    margin-top: -50px;
-}
+        .s {
+          width: 200px;
+          height: 300px;
+        }
+      }
+    }
+    .stages {
+      .elipse4 {
+        top: -35px;
+      }
+    }
+  }
 
-.testing-title h1 {
-    margin-top: 210px;
-    margin-left: 32.5px;
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 28px;
-}
+  @media screen and (min-width: 1440px) {
+    .brain {
+      .ux {
+        h1 {
+          font-size: 80px;
+          font-weight: 400;
+        }
+      }
 
-.arrow2 {
-    text-align: end;
-    padding-right: 267px;
-    margin-top: -50px;
-}
+      .ui {
+        h1 {
+          font-size: 80px;
+          font-weight: 400;
+        }
+      }
+    }
 
-.race2 {
-    text-align: end;
-    padding-right: 181px;
-}
+    .stages {
+      .elipse5 {
+        top: 33%;
+      }
+    }
+  }
 
-.finish h1 {
-    text-align: end;
-    margin-right: 241px;
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 28px;
-}
+  @media screen and (min-width: 1920px) {
+    .home {
+      width: 100%;
+      height: 1016px;
+      background-color: #48337b;
+      position: relative;
+      display: flex;
+      overflow: hidden;
 
-.elipse4 {
-    left: -110px;
-    position: absolute;
-    transform: rotate(18.85deg);
-}
+      .title {
+        .title1 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          border-radius: nullpx;
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+          font-size: 96px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 112px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #ffffff;
+        }
+        .title2 {
+          position: absolute;
+          top: 55%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+            Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 28px;
+          color: #ffffff;
+          margin-top: 30px;
+        }
+      }
 
-.elipse5 {
-    position: absolute;
-    left: 1035px;
-}
+      .elipse1 {
+        top: 0;
+        width: 40%;
+        position: absolute;
+      }
+      .elipse2 {
+        width: 30%;
+        left: 0%;
+        top: 30%;
+        position: absolute;
+      }
+      .elipse3 {
+        position: absolute;
+        width: 40%;
+      }
+    }
 
+    .rectangle {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 88px 240px;
+
+      .left {
+        padding-left: 0;
+        width: 50%;
+
+        p {
+          font-family: Roboto;
+          font-size: 24px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 28px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+
+        h2 {
+          font-family: Roboto;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 48px;
+          line-height: 56px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          color: #333333;
+        }
+        .read-more {
+          height: 48px;
+          width: 220px;
+          border-radius: 43px;
+          background-color: #ff9800;
+          font-family: Roboto;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 16px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #ffffff;
+          border: none;
+          cursor: pointer;
+        }
+      }
+
+      .right {
+        position: relative;
+      }
+    }
+
+    .brain {
+      background-color: #48337b;
+      display: flex;
+      justify-content: center;
+      flex-direction: row;
+      padding: 70px 500px;
+
+      .ux {
+        h1 {
+          font-size: 96px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 113px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #ffffff;
+        }
+
+        h3 {
+          margin-top: 25px;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 23px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+
+      .brain-img {
+        margin: 0 40px;
+      }
+
+      .ui {
+        h1 {
+          font-size: 96px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 113px;
+          letter-spacing: 0em;
+          text-align: left;
+          color: #ffffff;
+        }
+
+        h3 {
+          margin-top: 25px;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 23px;
+          letter-spacing: 0em;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .principles {
+      display: flex;
+      flex-direction: column;
+
+      .principles-title {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+
+        h1 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 48px;
+          line-height: 56px;
+          color: #000000;
+          margin-bottom: -5px;
+        }
+      }
+      .square {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+
+        .s:hover {
+          background: #ff9800;
+          transition: 1s;
+        }
+
+        .s {
+          position: relative;
+          margin: 0 40px;
+          width: 330px;
+          height: 376px;
+          background: #48337b;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 8px;
+
+          img {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          .tag {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-style: normal;
+            font-weight: normal;
+            font-size: 48px;
+            line-height: 56px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .stages {
+      margin-top: 150px;
+      position: relative;
+
+      .stages-title {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 50px 0;
+
+        h1 {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 48px;
+          line-height: 56px;
+          color: #000000;
+        }
+      }
+
+      .elipse4 {
+        width: 20%;
+        position: absolute;
+        top: -80px;
+      }
+
+      .elipse5 {
+        position: absolute;
+        top: 50%;
+      }
+
+      .start-finish {
+        position: relative;
+        width: 100%;
+
+        .start-finish-img {
+          display: block;
+          margin: 30px auto;
+          width: 55%;
+        }
+      }
+    }
+  }
+}

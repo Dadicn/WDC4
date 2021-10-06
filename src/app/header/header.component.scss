@@ -1,20 +1,204 @@
-.navbar {
-    width: 100%;
+:host {
+  * {
     height: 64px;
-    background-color: #48337B;
-    overflow: hidden;
-}
+  }
 
-.menu p {
-font-family: Hemi Head;
-font-style: italic;
-font-weight: bold;
-font-size: 24px;
-line-height: 29px;
-width: 95px;
-height: 29px;
-padding-left: 240px;
-padding-top: 17px;
-color: #FFFFFF;
-mix-blend-mode: difference;
+  .mat {
+    background-color: #48337b;
+
+    p {
+      position: relative;
+      width: 95px;
+      height: 29px;
+      font-style: italic;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 29px;
+      color: #ffffff;
+      mix-blend-mode: difference;
+      font-size: 24px;
+      font-style: italic;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0em;
+      text-align: left;
+      cursor: pointer;
+
+      .uxteam {
+        margin-left: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .beetween {
+      flex: 1 1 auto;
+    }
+
+    .navbar {
+      position: absolute;
+      top: -1000px;
+      left: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      transition: all 1.5s ease;
+      z-index: 5;
+      a {
+        padding-top: 12px;
+        color: #ff9800;
+        font-weight: 700;
+        font-size: 28px;
+      }
+    }
+
+    .show-navbar {
+      position: absolute;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: #48337b;
+      top: 0px;
+      left: 0;
+      z-index: 10;
+      visibility: visible;
+      transition: all 0.5s ease;
+      height: 300px;
+    }
+
+    #nav {
+      margin-right: 20px;
+      width: 60px;
+      height: 45px;
+      position: relative;
+      -webkit-transform: rotate(0deg);
+      -moz-transform: rotate(0deg);
+      -o-transform: rotate(0deg);
+      transform: rotate(0deg);
+      -webkit-transition: 0.5s ease-in-out;
+      -moz-transition: 0.5s ease-in-out;
+      -o-transition: 0.5s ease-in-out;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+      z-index: 10;
+
+      &.open span:nth-child(1) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+
+      &.open span:nth-child(2) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+      }
+
+      &.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+      }
+
+      &.open span:nth-child(4) {
+        top: 18px;
+        width: 0%;
+        left: 50%;
+      }
+
+      span {
+        display: block;
+        position: absolute;
+        height: 9px;
+        width: 100%;
+        background: #b7cc84;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: 0.25s ease-in-out;
+        -moz-transition: 0.25s ease-in-out;
+        -o-transition: 0.25s ease-in-out;
+        transition: 0.25s ease-in-out;
+
+        &:nth-child(1) {
+          top: 0px;
+        }
+
+        &:nth-child(2),
+        &:nth-child(3) {
+          top: 18px;
+        }
+
+        &:nth-child(4) {
+          top: 36px;
+        }
+
+        .rotate-top {
+          top: 10px;
+          position: absolute;
+          transform: rotate(-135deg);
+          transition: 0.5s;
+        }
+
+        .rotate-bot {
+          top: 10px;
+          position: absolute;
+          transform: rotate(135deg);
+          transition: 0.5s;
+        }
+
+        .hide-middle {
+          opacity: 0;
+          transition: 0.5s;
+        }
+      }
+    }
+
+    .burger {
+      width: 45px;
+      height: 30px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      position: relative;
+      .burger-line {
+        width: 100%;
+        height: 6px;
+        background-color: #b7cc84;
+      }
+    }
+
+    .remove {
+      visibility: hidden;
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .mat {
+      .uxteam {
+        margin-left: 130px;
+      }
+
+      #nav {
+        margin-right: 130px;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    .mat {
+      .uxteam {
+        margin-left: 240px;
+      }
+
+      #nav {
+        margin-right: 240px;
+      }
+    }
+  }
 }

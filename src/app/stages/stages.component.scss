@@ -1,217 +1,117 @@
-.process {
-    width: 100%;
-    height: 1080px;
-    background-color: #48337B;
-}
+:host {
+  .stages {
+    background-color: #48337b;
 
-.title h1 {
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 56px;
-color: #FFFFFF;
-text-align: center;
-padding-top: 40px;
-}
+    .stages-title {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 30px 0;
 
-.three {
-    display: flex;
-}
+      h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 36px;
+        color: #ffffff;
+        margin-bottom: 30px;
+      }
+    }
 
-.three h1 {
-padding-top: 212px;
-padding-left: 483px;
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 56px;
-color: #FFFFFF;
-}
+    .ux-process {
+      .process {
+        padding-right: 20px;
+        margin-top: -80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 5%;
+      }
+    }
+  }
 
-.arrow1 {
-    margin-top: -30px;
-}
-
-.arrow1 h1 {
-    margin-top: -330px;
-    margin-left: -30px;
-}
-
-.three1 {
-    display: flex;
-}
-
-.arrow2 {
-    padding-left: 302px;
-    margin-top: -170px;
-}
-
-.testing h1 {
-    font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 48px;
-line-height: 56px;
-color: #FFFFFF;
-padding-top: 351px;
-margin-left: -50px;
-}
-
-.arrow3 {
-    padding-top: 45px;
-}
-
-.main {
-    width: 100%;
-    height: 656px;
-    background-color: white;
-}
-
-.text {
-    padding-top: 86px;
-    padding-left: 180px;
+  .main {
+    padding: 50px 50px;
 
     h1 {
-        font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 28px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 28px;
+      color: #000000;
+    }
+  }
+
+  .rdt {
+    position: relative;
+
+    .rdt-title {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-style: normal;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 112px;
+      color: #ffffff;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .stages {
+      .stages-title {
+        h1 {
+          font-size: 48px;
+        }
+      }
+      .ux-process {
+        .process {
+          .process-img {
+            width: 60%;
+          }
+        }
+      }
     }
 
-    h2 {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 28px;
+    .main {
+      padding: 50px 100px;
     }
 
-    h3 {
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 28px;
+    .rdt {
+      .rdt-title {
+        font-size: 50px;
+      }
     }
-}
+  }
 
-.researching {
-    width: 100%;
-    height: 400px;
-    background-color: #48337B;
-    background-image: url('/assets/1.png') !important;
-}
-
-
-
-.title-research h1 {
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 96px;
-line-height: 112px;
-color: #FFFFFF;
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-text-align: center;
-padding-top: 152px;
-}
-
-.main2 {
-    width: 100%;
-    height: 656px;
-    background-color: white;
-}
-
-.text2 {
-    padding-top: 86px;
-    padding-left: 180px;
-}
-
-.text2 h1 {
-    font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 28px;
-}
-
-.design {
-    width: 100%;
-    height: 400px;
-    background-color: #48337B;
-    background-image: url('/assets/2.jpg') !important;
-}
-
-.title-design h1 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 96px;
-    line-height: 112px;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    padding-top: 152px;
+  @media screen and (min-width: 1920px) {
+    .stages {
+      .stages-title {
+        h1 {
+          font-size: 48px;
+        }
+      }
+      .ux-process {
+        .process {
+          .process-img {
+            width: 40%;
+          }
+        }
+      }
     }
 
-.main3 {
-    width: 100%;
-    height: 656px;
-    background-color: white;
+    .main {
+      padding: 50px 240px;
+    }
+
+    .rdt {
+      .rdt-title {
+        font-size: 70px;
+      }
+    }
+  }
 }
-
-.text3 {
-    padding-top: 86px;
-    padding-left: 180px;
-}
-
-.text3 h1 {
-    font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 28px;
-}
-
-.testing1 {
-    width: 100%;
-    height: 400px;
-    background-color: #48337B;
-    background-image: url('/assets/3.jpg') !important;
-}
-
-.title-testing h1 {
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 96px;
-    line-height: 112px;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    padding-top: 152px;
-}
-
-.main4 {
-    width: 100%;
-    height: 440px;
-    background-color: white;
-}
-
-.text4 {
-    padding-top: 86px;
-    padding-left: 180px;
-}
-
-.text4 h1 {
-    font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 28px;
-}
-
-

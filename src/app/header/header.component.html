@@ -1,5 +1,20 @@
-<div class="navbar">
-<div class="menu">
-    <p>UXTEAM</p>
-</div>
-</div>
+<mat-toolbar class="mat">
+  <p class="uxteam" (click)="hideBar()" routerLink="/">UXTEAM</p>
+
+  <div class="beetween"></div>
+
+  <div class="navbar">
+    <a (click)="hideBar()" routerLink="/" mat-button>Home</a>
+    <a (click)="hideBar()" routerLink="stages" mat-button>Stages</a>
+    <a (click)="hideBar()" routerLink="strat" mat-button>Strategy</a>
+    <a (click)="hideBar()" routerLink="uxui" mat-button>UX/UI</a>
+    <a (click)="hideBar()" routerLink="contact" mat-button>Contact</a>
+  </div>
+
+  <div (click)="showBar()" id="nav">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</mat-toolbar>
